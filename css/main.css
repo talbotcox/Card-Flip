@@ -1,0 +1,64 @@
+#portfolio {
+	perspective: 1000;
+}
+
+.portfolio-item {
+	width: 200px;
+	height: 200px;
+}
+
+.portfolio-item:hover , .portfolio-item.hover .portfolio-item {
+		transform: rotateY(180deg);
+	}
+
+.portfolio, .front, .back {
+	width: 200px;
+	height: 200px;
+}
+
+
+.portfolio-item {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
